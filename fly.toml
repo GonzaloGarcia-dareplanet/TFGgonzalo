@@ -1,0 +1,12 @@
+app = "n8nflyio"  # Cambia esto por el nombre de tu aplicación
+
+
+
+[[services]]
+  internal_port = 8080  # Cambia esto según el puerto que tu app usa
+  force_https = true
+  protocol = "tcp"
+
+  [[services.ports]]
+    handlers = ["http"]
+    port = 80
